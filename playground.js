@@ -14,7 +14,8 @@
 	function checkStatus() {
 		if ( httpRequest.readyState === 4 && httpRequest.status === 200 ) {
 			console.log('Everthing is good here');
-			console.log(httpRequest.responseText)
+			console.log(httpRequest.responseText);
+			main.innerHTML = httpRequest.responseText;
 		}
 	}
 
